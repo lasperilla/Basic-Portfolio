@@ -4,8 +4,8 @@
     display: table;
 }
 
-#header {
-    height: 125px;
+.header {
+   height: 125px;
     position: relative;
     background: #FFFFFF;
     border-color: #cccccc;
@@ -13,26 +13,26 @@
     /*  background: yellow;*/
 }
 
-#letterhead {
+.letterhead {
     background: #4AAAA5;
     color: #FFFFFF;
     width: 375px;
     padding: 0px 6px 0px 6px;
     float: left;
     position: absolute;
-    left: 10%;
+    left: 50px;
     bottom: 0px;
     text-align: center;
     font-family: 'Georgia', Times, Times New Roman, serif;
     font-size: 18px;
 }
 
-#topmenu {
+.topmenu {
     width: 500px;
     padding: 5px;
     float: left;
     position: absolute;
-    left: 66.6%;
+    left: 750px;
     bottom: 20%;
 }
 
@@ -49,14 +49,14 @@
 
 /*not sure how to put | between about, portfolio, and contact links. using border on middle link for now*/
 
-.tmcenter {
+#tmcenter {
     border-left-style: solid;
     border-right-style: solid;
     border-left-color: gray;
     border-right-color: gray;
 }
 
-#footer {
+.footer {
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     background-color: #666666;
     color: #A1A8B5;
@@ -64,13 +64,18 @@
     padding: 20px;
 }
 
-#wrapper {
+.wrapper {
+    clear: both;
+    overflow: auto;
+    /*border-style: solid;*/
     background-image: url("../../assets/images/background.png");
-    padding: 30px 30px 300px 30px;
+    /*padding: 30px 30px 300px 30px;*/
+    padding: 50px;
+    /* weird overflow problem with body div. been fixing by adjusting bottom padding*/
+    /*problem was fixed. problem was due to index's position set to absolute*/
 }
 
-
-#index {
+.maincontent {
     /*text-align: center;*/
     border-top-style: solid;
     border-bottom-style: solid;
@@ -82,16 +87,16 @@
     line-height: 200%;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     color: #4aaaa5;
-    width: 55%;
+    width: 650px;
     float: left;
-    position: absolute;
-    left: 10%;
-  /*  margin: 10px;*/
+    /*    position: absolute;
+    left: 10%;*/
+    /*  margin: 10px;*/
 }
 
-#connect {
-    float: right;
-    width: 30%;
+.connect {
+    float: left;
+    width: 270px;
     border-top-style: solid;
     border-bottom-style: solid;
     border-top-color: #DFDFDF;
@@ -104,9 +109,10 @@
     color: #4aaaa5;
     text-decoration: none;
     padding: 10px;
+    margin-left: 40px;
 }
 
-#profilepic {
+.profilepic {
     float: left;
     margin: 0px 10px 10px 0px;
     position: relative;
@@ -114,15 +120,15 @@
 }
 
 #aboutme {
-padding: 10px 30px 10px 30px;
+    padding: 10px 30px 10px 30px;
 }
 
-#bio {
+.bio {
     border-top-style: solid;
     border-top-color: #DFDFDF;
-padding: 10px 30px 10px 30px;
+    padding: 10px 30px 10px 30px;
 }
 
 .tdn {
-       text-decoration: none;
+    text-decoration: none;
 }
