@@ -15,12 +15,12 @@
         <div class="letterhead">
             <h1>Lawrence Asperilla</h1>
         </div>
-        <!--group and position right-->
-        <div class="topmenu">
-            <a href="index.html" class="tmlink">About</a>
-            <a href="portfolio.html" class="tmlink" id="tmcenter">Portfolio</a>
-            <a href="contact.html" class="tmlink">Contact</a>
-        </div>
+        <!--navigation links position right-->
+        <ul class="topmenu">
+            <li> <a href="index.html" class="tmlink">About</a></li>
+            <li><a href="portfolio.html" class="tmlink" id="tmcenter">Portfolio</a></li>
+            <li id="lilast"><a href="contact.html" class="tmlink">Contact</a></li>
+        </ul>
     </div>
     <!-- Main body/everything between header & footer -->
     <div class="wrapper clearfix">
@@ -31,19 +31,15 @@
             </div>
             <div class="maincontentbody">
                 <form>
-                    <h3>Name</h3>
+                    <h3 class="contactheader">Name</h3>
+                    <input type="text" name="name" placeholder="John Smith">
                     <br>
-                    <input type="text" name="name" value="John Smith">
+                    <h3 class="contactheader">Email</h3>
+                    <input type="text" name="email" placeholder="example@gmail.com">
                     <br>
-                    <h3>Email</h3>
-                    <input type="text" name="email" value="example@gmail.com">
-                    <br>
-                    <h3>Message</h3>
-                    <br>
+                    <h3 class="contactheader">Message</h3>
                     <textarea rows="10"></textarea>
-                    <br>
-                    <br>
-                    <input type="submit">
+                    <input type="submit" value="Submit">
                 </form>
             </div>
         </div>
