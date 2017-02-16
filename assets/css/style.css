@@ -4,26 +4,48 @@
     display: table;
 }
 
+/*restyling some basic elements that got reset with reset.css*/
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-top: 0.83em;
+    margin-bottom: 0.83em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+/*header/navigation section*/
 .header {
-   height: 125px;
+    height: 100px;
     position: relative;
     background: #FFFFFF;
     border-color: #cccccc;
     border-bottom-style: solid;
-    /*  background: yellow;*/
+    border-width: 3px;
 }
 
 .letterhead {
     background: #4AAAA5;
     color: #FFFFFF;
-    width: 375px;
-    padding: 0px 6px 0px 6px;
+    width: 425px;
+    height: 100%;
     float: left;
     position: absolute;
     left: 50px;
     bottom: 0px;
     text-align: center;
-    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
     font-size: 18px;
 }
 
@@ -48,25 +70,31 @@
 
 
 /*not sure how to put | between about, portfolio, and contact links. using border on middle link for now*/
-
 #tmcenter {
     border-left-style: solid;
     border-right-style: solid;
-    border-left-color: gray;
-    border-right-color: gray;
+    border-left-color: #4AAAA5;
+    border-right-color: #4AAAA5;
+    border-width: 1px;
 }
 
+/*footer section*/
 .footer {
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 14px;
     background-color: #666666;
     color: #A1A8B5;
     text-align: center;
-    padding: 20px;
+    padding: 30px;
+    border-color: #4AAAA5;
+    border-top-style: solid;
+    border-width: 8px;
 }
 
+/*Main content / everything between header & footer*/
 .wrapper {
-    clear: both;
-    overflow: auto;
+    /*clear: both;*/
+    /*overflow: auto;*/
     /*border-style: solid;*/
     background-image: url("../../assets/images/background.png");
     /*padding: 30px 30px 300px 30px;*/
@@ -76,59 +104,66 @@
 }
 
 .maincontent {
-    /*text-align: center;*/
-    border-top-style: solid;
-    border-bottom-style: solid;
-    border-top-color: #DFDFDF;
-    border-bottom-color: #DFDFDF;
     background-color: #ffffff;
     border-color: #dddddd;
     border-style: solid;
+    border-width: 2px;
     line-height: 200%;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    color: #4aaaa5;
+    color: #777777;
     width: 650px;
     float: left;
-    /*    position: absolute;
-    left: 10%;*/
     /*  margin: 10px;*/
 }
 
 .connect {
     float: left;
     width: 270px;
-    border-top-style: solid;
-    border-bottom-style: solid;
-    border-top-color: #DFDFDF;
-    border-bottom-color: #DFDFDF;
     background-color: #ffffff;
     border-color: #dddddd;
     border-style: solid;
+    border-width: 2px;
     line-height: 200%;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     color: #4aaaa5;
     text-decoration: none;
-    padding: 10px;
+    text-align: center;
+    /*padding: 10px;*/
     margin-left: 40px;
+}
+
+.snsicon {
+    margin: 25px;
+    border-top-style: solid;
+    border-top-color: #DFDFDF;
+    border-width: 3px;
+    padding-top: 30px;
 }
 
 .profilepic {
     float: left;
     margin: 0px 10px 10px 0px;
     position: relative;
-    top: 20px;
+    top: 10px;
 }
 
-#aboutme {
+.maincontenttitle {
     padding: 10px 30px 10px 30px;
+    color: #4aaaa5;
 }
 
 .bio {
     border-top-style: solid;
     border-top-color: #DFDFDF;
-    padding: 10px 30px 10px 30px;
+    border-width: 3px;
+    padding: 20px 0px 20px 0px;
+    /*margin used to make top border not span the full width of the containing div*/
+    margin: 0px 30px 0px 30px;
+    color: #777777;
 }
 
+/*Misc.*/
+/*needed to get rid of random underlining between linked sns thumbnails*/
 .tdn {
     text-decoration: none;
 }
